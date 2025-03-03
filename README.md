@@ -8,8 +8,6 @@
 
 테스트 도구를 사용하는 방법을 배우고 프로그램이 제대로 작동하는지 테스트한다.
 
-[1주 차 공통 피드백](https://docs.google.com/document/d/1VhEvU7rqzhlfTglVtp1wMr2j1hGtC0UZaZGTfWul29E/edit?usp=sharing)을 최대한 반영한다.
-
 ### **회고**
 
 아래 질문에 대한 중간 회고를 진행하고 소감에 구체적인 결과를 작성한다. 소감은 텍스트로 작성해야 하며 외부 링크는 허용하지 않는다.
