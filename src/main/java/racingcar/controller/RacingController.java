@@ -5,6 +5,7 @@ import racingcar.entity.Cars;
 import racingcar.factory.CarsFactory;
 import racingcar.service.RacingService;
 import racingcar.util.Parser;
+import racingcar.util.Validation;
 import racingcar.view.InputView;
 import racingcar.view.OutputView;
 
@@ -18,7 +19,9 @@ public class RacingController {
     }
 
     public void run(){
-        List<String> carNames = Parser.parseCarName(getCarNamesByInput());
+        String carNamesInput = getCarNamesByInput();
+        Validation.checkCarNamesInput(carNamesInput);
+        List<String> carNames = Parser.parseCarName(carNamesInput);
         Cars cars = CarsFactory.createCars(carNames);
 
         int trailInput = Parser.parseTrail(getTrailByInput());
