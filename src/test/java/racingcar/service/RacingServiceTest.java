@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import racingcar.entity.Car;
 import racingcar.entity.Cars;
+import racingcar.factory.CarsFactory;
 
 import java.util.List;
 
@@ -17,10 +18,8 @@ public class RacingServiceTest {
     @BeforeEach
     void init(){
         racingService = new RacingService();
-        cars = new Cars();
-        cars.addCars(new Car("test1"));
-        cars.addCars(new Car("test2"));
-        cars.addCars(new Car("test3"));
+        List<String> carNames = List.of("test1", "test2", "test3");
+        cars = CarsFactory.createCars(carNames);
     }
 
     @Test
