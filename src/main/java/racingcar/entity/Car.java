@@ -12,6 +12,10 @@ public class Car {
         this.position+=distance; // 확장성을 위해 파라미터로 받음
     }
 
+    public String getName(){
+        return name;
+    }
+
     public int getPosition(){
         return position;
     }
